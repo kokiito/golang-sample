@@ -21,7 +21,6 @@ func main() {
    var httpServer http.Server
    http.HandleFunc("/", handler)
    log.Println("start http listening :18888")
-   log.Println("http://127.0.0.1:18888")
    httpServer.Addr = ":18888"
    log.Println(httpServer.ListenAndServe())
 }
